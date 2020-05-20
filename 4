@@ -1,0 +1,24 @@
+using System;
+
+class HelloWorld {
+  static void Main() {
+    try
+    {
+        TestClass.DoSomething();
+    }
+    catch (NotImplementedException e)
+    {
+        Console.WriteLine(e.Message);
+    }
+  }
+
+}
+  public class TestClass {
+ public static (string,int,double) DoSomething() {
+      string name = "tarek";  
+        int age=24;
+        double weight=60;
+        // return (name, age,weight);
+    throw new  NotImplementedException();
+  }
+}
